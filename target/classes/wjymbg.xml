@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="javaFileEncoding" value="UTF-8"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3307/spark_project" userId="root" password="123456"/>
+
+        <javaModelGenerator targetPackage="com.wjy.model" targetProject=".\src\main\java"/>
+
+        <sqlMapGenerator targetPackage="mappers" targetProject=".\src\main\java"/>
+
+        <javaClientGenerator targetPackage="com.wjy.dao" targetProject=".\src\main\java" type="XMLMAPPER"/>
+
+        <table tableName="task" domainObjectName="task">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <!--<table tableName="tbl_dept" domainObjectName="Dept">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="tbl_emp" domainObjectName="Emp">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--
+        <table tableName="hz_basic_config" domainObjectName="BasicConfig">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_config" domainObjectName="Config">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_consult" domainObjectName="Consult">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_consult_doctor" domainObjectName="ConsultDoctor">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_consult_patient" domainObjectName="ConsultPatient">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_consult_template" domainObjectName="ConsultTemplate">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_department_config" domainObjectName="DepartmentConfig">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_evaluate" domainObjectName="Evaluate">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_field" domainObjectName="Field">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_field_detail" domainObjectName="FieldDetail">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_file" domainObjectName="File">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_flow_note" domainObjectName="FlowNote">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_flow_record" domainObjectName="FlowRecord">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_funcion" domainObjectName="Funcion">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_msg_flow" domainObjectName="MsgFlow">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_pacs_item" domainObjectName="PacsItem">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_price_config" domainObjectName="PriceConfig">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_recipe" domainObjectName="Recipe">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_recipe_report" domainObjectName="RecipeReport">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_schedule" domainObjectName="Shedule">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_slide" domainObjectName="Slide">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_template" domainObjectName="Template">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_template_detail" domainObjectName="TemplateDetail">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_user" domainObjectName="User">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_address" domainObjectName="Address">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="hz_consult_address" domainObjectName="ConsultAddress">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="hz_diagnose" domainObjectName="Diagnose">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        -->
+
+    </context>
+
+</generatorConfiguration>
+
